@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client-pod
+  labels:
+    component: web
+spec:
+  containers:
+    - name: client
+      image: astrals63/multi-worker
+      ports: 
+        - containerPort: 3000
+
+
+  # image: astrals63/multi-nginx
+  # image: astrals63/multi-server
+  # image: astrals63/multi-worker
